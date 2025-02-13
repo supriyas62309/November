@@ -3,6 +3,7 @@ package program;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -26,13 +27,14 @@ public class test1 {
 		driver.findElement(By.id("continue")).click();
 		driver.findElement(By.name("password")).sendKeys("supriya@s");
 		driver.findElement(By.id("signInSubmit")).click();
-		driver.findElement(By.id("searchDropdownBox")).click();
+		//driver.findElement(By.id("searchDropdownBox")).click();
 		
 	WebElement k=	driver.findElement(By.xpath("//select[@id='searchDropdownBox']"));
 	Select s1=new Select(k);
 	Thread.sleep(2000);
 	s1.selectByVisibleText("Books");
-	
+	Thread.sleep(3000);
+ s = ((TakesScreenshot).driver).getScreenshotAs(OutputType.FILE);
 
 		
 		
