@@ -32,6 +32,7 @@ act.sendKeys(Keys.ENTER).perform();
 String v=from.getAttribute("class");
 System.out.println(v);
 //driver.findElement(By.xpath("//a[text()='Search']")).click();
+//https://github.com/supriyas62309/Selenium2024
 	}
 
 }
